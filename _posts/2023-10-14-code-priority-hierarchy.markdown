@@ -30,7 +30,7 @@ between readability and performance should prioritize readability.
 Code is correct when, for any inputs and external state the code produces the correct output and external state.
 Inputs and outputs are explicitly defined.
 External states are implicitly defined by use in the code.
-Code *MUST* satisfy correctness before any other attributes can be considered.
+Code **MUST** satisfy correctness before any other attributes can be considered.
 
 Corollary, dead code is code which does not affect the output or external state.
 
@@ -49,10 +49,8 @@ Readability describes the ease (or difficulty) with which a developer can unders
 is being done.
 
 
-For repeated desirable outcomes, a developer *MUST* understand the code before using it or modifying it.
+For repeatable desirable outcomes, a developer **MUST** understand the code before using it or modifying it.
 
-1. must understand to modify (deterministic? outcomes)
-2. must understand to use (includes testing)
 
 ## Performance
 
