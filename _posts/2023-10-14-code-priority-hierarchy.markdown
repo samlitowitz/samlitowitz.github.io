@@ -28,41 +28,37 @@ between readability and performance should prioritize readability.
 ## Correctness
 
 Code is correct when, for any inputs and external state the code produces the correct output and external state.
-
+Inputs and outputs are explicitly defined.
+External states are implicitly defined by use in the code.
+Code *MUST* satisfy correctness before any other attributes can be considered.
 
 Corollary, dead code is code which does not affect the output or external state.
 
-
-Inputs are items explicitly passed into the scope such as function arguments.
-External state is anything which is not an input, e.g. global variables, class or struct member variables, or
-data in a file.
-
 ## Minimum Performance Requirements
-Code meets the minimum performance requirements when the code metrics conform to the minimum required metrics.
 
+The minimum performance requirements are an arbitrary set of metrics which the code must meet.
+Code meets the minimum performance requirements when the code metrics conform to the minimum required metrics.
 
 Corollary, if there are no minimum required metrics then this attribute is not a priority and should be ignored.
 
-
 Corollary, if the metrics cannot be meaningfully measured then there are no minimum required metrics.
-
 
 ## Readability
 
-
+Readability describes the ease (or difficulty) with which a developer can understand what the code is doing and why it
+is being done.
 
 ## Performance
 
+Performance requirements are an arbitrary set of metrics which the code must meet.
 Performance is the conformity of this codes metrics to the desired metrics.
-
 
 Corollary, if there are no desired metrics then this attribute is not a priority and should be ignored.
 
-
 Corollary, if the metrics cannot be meaningfully measured then there are no desired metrics.
 
-
 # NOTES/WIP
+
 [TODO]: <> (why does this matter???)
 
 [TODO]: <> (purpose!)
