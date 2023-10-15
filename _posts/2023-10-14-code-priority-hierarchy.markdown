@@ -7,20 +7,13 @@ categories: programming wip
 
 # Purpose
 
-1. formalize definitions
-1. formalize priority
-
 This document serves two purposes.
 The first is to formalize the definitions of all items in the code priority hierarchy.
 These terms are useful in many contexts beyond the code priority hierarchy and the definitions can provide a shared
 basis of understanding to work from.
 The second purpose is to provide a framework for developers which can guide their decisions for most cases.
 
-~The second purpose is to define a set of prioritized attributes for code which can be used in most cases to provide developers a framework~
-
 # Code Priority Hierarchy
-
-[TODO]: <> (where do I put the actual list for maximum understanding/readability/context?)
 
 1. Correctness
 2. Minimum Performance Requirements
@@ -32,11 +25,47 @@ The highest priority attribute is the first item in the list and the lowest prio
 Attributes with a higher priority take precedence over attributes with a lower priority, e.g. a developer deciding
 between readability and performance should prioritize readability.
 
+## Correctness
+
+Code is correct when, for any inputs and external state the code produces the correct output and external state.
+
+
+Corollary, dead code is code which does not affect the output or external state.
+
+
+Inputs are items explicitly passed into the scope such as function arguments.
+External state is anything which is not an input, e.g. global variables, class or struct member variables, or
+data in a file.
+
+## Minimum Performance Requirements
+Code meets the minimum performance requirements when the code metrics conform to the minimum required metrics.
+
+
+Corollary, if there are no minimum required metrics then this attribute is not a priority and should be ignored.
+
+
+Corollary, if the metrics cannot be meaningfully measured then there are no minimum required metrics.
+
+
+## Readability
+
+
+
+## Performance
+
+Performance is the conformity of this codes metrics to the desired metrics.
+
+
+Corollary, if there are no desired metrics then this attribute is not a priority and should be ignored.
+
+
+Corollary, if the metrics cannot be meaningfully measured then there are no desired metrics.
+
+
+# NOTES/WIP
 [TODO]: <> (why does this matter???)
 
 [TODO]: <> (purpose!)
-
-
 
 1. Correctness
 
