@@ -48,6 +48,12 @@ Corollary, if the metrics cannot be meaningfully measured then there are no mini
 Readability describes the ease (or difficulty) with which a developer can understand what the code is doing and why it
 is being done.
 
+
+For repeated desirable outcomes, a developer *MUST* understand the code before using it or modifying it.
+
+1. must understand to modify (deterministic? outcomes)
+2. must understand to use (includes testing)
+
 ## Performance
 
 Performance requirements are an arbitrary set of metrics which the code must meet.
