@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Code Priority Hierarchy"
-date:   2023-10-14 00:00:00 0000
+title:  "Code Priority Hierarchy: Definitions and Utility"
+date:   2023-10-20 00:00:00 0000
 categories: programming code-priority-hierarchy readability correctness performance
 ---
 
@@ -29,7 +29,7 @@ between readability and performance should prioritize readability.
 
 Code is correct when, for any inputs and external state the code produces the correct output and external state.
 Inputs and outputs are explicitly defined.
-External states are implicitly defined by use in the code.
+External states are implicitly defined by use in the code, e.g. global variables.
 Code **MUST** satisfy correctness before any other attributes can be considered.
 
 Corollary, dead code is code which does not affect the output or external state.
@@ -53,7 +53,7 @@ For repeatable desirable outcomes, a developer **MUST** understand the code befo
 ## Performance
 
 Performance requirements are an arbitrary set of metrics which the code must meet.
-Performance is the conformity of this codes metrics to the desired metrics.
+Performance is the conformity of this code's metrics to the desired metrics.
 
 Corollary, if there are no desired metrics then this attribute is not a priority and should be ignored.
 
